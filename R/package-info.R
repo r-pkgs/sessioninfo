@@ -36,7 +36,7 @@ package_info <- function(pkgs = NULL, include_base = FALSE) {
   desc <- lapply(pkgs$package, utils::packageDescription)
 
   pkgs$is_base <- vapply(
-    desc, function(x) identical(x$Priority, "base"), logical(1)
+    desc, function(x) identical(x[["Priority"]], "base"), logical(1)
   )
 
   pkgs$date <- vapply(desc, pkg_date, character(1))
