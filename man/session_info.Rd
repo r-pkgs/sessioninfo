@@ -25,7 +25,7 @@ Columns in the \emph{printed} package list:
 \itemize{
 \item \code{package}: package name
 \item \code{*}: whether the package is attached to the search path
-\item \code{version}: package version. If the version is marked with \code{(!)} that
+\item \code{version}: package version. If the version is marked with \verb{(!)} that
 means that the loaded and the on-disk version of the package are
 different.
 \item \code{date}: when the package was built, if this information is available.
@@ -33,7 +33,7 @@ This is the \code{Date/Publication} or the \code{Built} field from
 \code{DESCRIPTION}. (These are usually added automatically by R.)
 Sometimes this data is not available, then it is \code{NA}.
 \item \code{source}: where the package was built or installed from, if available.
-Examples: \code{CRAN (R 3.3.2)}, \code{Github (r-lib/pkgbuild@8aab60b)},
+Examples: \verb{CRAN (R 3.3.2)}, \verb{Github (r-lib/pkgbuild@8aab60b)},
 \code{Bioconductor}, \code{local}.
 }
 
